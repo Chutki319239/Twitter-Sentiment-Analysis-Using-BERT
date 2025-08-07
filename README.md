@@ -1,32 +1,42 @@
-# 💬 Twitter Sentiment Analyzer
+# Twitter-Sentiment-Analysis-Using-BERT
+This project performs real-time sentiment analysis of tweets using a fine-tuned BERT model and integrates Google Gemini API for advanced response verification. Built with a sleek Streamlit frontend, it allows users to input tweet text or a Twitter handle to determine whether the content is positive or negative.
 
-A Streamlit web app that analyzes the sentiment of tweets using a fine-tuned BERT model and verifies them using *Gemini Pro AI*.
+🚀 Key Features:
 
-### 🚀 Features
-- Analyze individual tweets or tweets from a username
-- Sentiment prediction using BERT
-- Gemini-powered sentiment verification
-- Timeline & Pie chart visualizations
-- Gemini-generated summary of tweet sentiments
-- Built with Selenium, Transformers, Streamlit & Gemini AI
+🔤 Text + Twitter Handle Input: Accepts direct tweet input or scrapes recent tweets from a given handle
 
-### 🔧 How to Run
-1. Clone the repository:
+🤖 BERT-Based Sentiment Classification: Transformer model for accurate binary sentiment prediction
 
-git clone https://github.com/Lavanya-Parashar/Twitter_Sentiment_Analyzer.git
+🧠 Google Gemini API Integration: Verifies sentiment, explains context, and adds generative summaries
 
-2. Install dependencies:
+📊 Clean and Interactive UI: Built using Streamlit with sentiment icons, pie chart, and intuitive layout
 
-pip install -r requirements.txt
+🧪 Model Evaluation Metrics: Accuracy, Precision, Recall, F1-Score, and Confusion Matrix
 
-3. Add your API key in .streamlit/secrets.toml (keep this private):
-   ```toml
-GEMINI_API_KEY = "your_api_key_here"
+🛠️ Tools & Technologies:
 
-5. Place your model.pth file in the project folder (not uploaded due to size limits).
-6.	Run the app:
+Python, PyTorch, Transformers (BERT)
 
-streamlit run seleniumnew_app.py
+Selenium for tweet scraping
 
-⸻
-📌 Note: model.pth is not included in this repo due to GitHub’s file size limit. 
+Streamlit for web interface
+
+Google Gemini API for verification
+
+📝 How to Use:
+
+Clone the repo and install dependencies
+
+Run streamlit run app.py
+
+Enter tweet text or Twitter handle
+
+Get sentiment prediction + Gemini summary
+
+* Model saved as model.pth is uploaded on google drive due to uploading constraints on Github.
+
+📌 Project Status:
+
+✅ Completed as part of in-house NTCC project (2025–26)
+
+👩‍💻 Built by: Vusala Akanksha & Lavanya Parashar
